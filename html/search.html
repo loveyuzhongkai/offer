@@ -1,0 +1,98 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <!--谷歌内嵌浏览器框架GCF)。这个插件可以让用户的IE浏览器不变，但用户在浏览网页时，
+    实际上使用的是Google Chrome浏览器内核，而且支持IE6、7、8等多个版本的IE浏览器-->
+    <meta http-equiv="X-UA-Compatible" content ="IE=edge,chrome=1"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>绿色家园</title>
+    <meta http-equiv="keywords" content="SEO网页关键字">
+    <meta http-equiv="description" content="网页描述">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="shortcut icon" href="../images/icon/Logo.png" type="image/x-icon" />
+    <style>
+    </style>
+</head>
+<body>
+<div class="header">
+    <div class="nav_left">绿色家园</div>
+    <div class="text"><input type="text" class="search" Placeholder="输入点什么呢" maxlength="20"/></div>
+    <div class="nav_right">
+        <ul>
+            <li><a href="offer.html">首页</a></li>
+            <li><a href="#">产品中心</a>
+                <ul class="down_menu">
+                    <li><a href="#">智能家居</a></li>
+                    <li><a href="#">APP开发</a></li>
+                    <li><a href="#">联合运营</a></li>
+                    <li><a href="#">微信服务</a></li>
+                </ul>
+            </li>
+            <li><a href="#">解决方案</a>
+                <ul class="down_menu">
+                    <li><a href="#">互联网金融</a></li>
+                    <li><a href="#">旅游酒店</a></li>
+                    <li><a href="#">汽车服务</a></li>
+                    <li><a href="#">电子政务</a></li>
+                </ul>
+            </li>
+            <li><a href="#">关于我们</a>
+                <ul class="down_menu">
+                    <li><a href="#">价值观</a></li>
+                    <li><a href="#">用户至上</a></li>
+                    <li><a href="#">极致体验</a></li>
+                    <li><a href="#">全情投入</a></li>
+                </ul>
+            </li>
+            <li><a href="#">更多</a>
+                <ul class="down_menu">
+                    <li><a href="#">联系电话</a></li>
+                    <li><a href="#">公司地址</a></li>
+                    <li><a href="#">发展前景</a></li>
+                    <li><a href="#">产业展望</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class=".clear"></div>
+<!--头部结束-->
+<div class="error">
+    <div class="error_text">
+        <h2>很抱歉,页面访问失败...</h2>
+        <h3 class="c">您搜索的内容<p class="show_text"></p>暂时没有匹配数据</h3>
+        <p><a href="offer.html">返回首页</a></p>
+    </div>
+</div>
+<!--底部-->
+<div class="footer_layout">
+    <div class="f_main">
+        <div class="f_t1">
+            <a href="#"target="_blank">绿色家园</a>|<a href="" target="_blank">About GreenHome</a>|<a href="" target="_blank">服务条款</a>|<a href="" target="_blank">客服中心</a>|<a href="" target="_blank">网站导航</a>|<a href="" target="_blank">广告服务</a>
+        </div>
+        <div class="f_t2">
+            Copyright © 2008-<span><script>document.write(new Date().getFullYear());</script></span>
+            Green Home<a target="_blank" href="http://www.greenhome.com/cn.offer.html">&nbspAll Rights Reserved.</a>
+        </div>
+        <div class="f_t3">
+            GreenHome<a target="_blank" href="#">版权所有</a><a target="_blank" href="#">经营许可证</a>
+        </div>
+    </div>
+</div>
+<div class="back_top"><img src="../images/icon/back_top1.png" alt="back_top_btn"></div>
+<script src="../script/common/jquery.min.js"></script>
+<script src="../script/local.js"></script>
+<script src="../script/offer.js"></script>
+<script>
+    var thisURL = decodeURI(document.URL);
+    var getVal = thisURL.split('?')[1];
+    var showVal = getVal.split('=')[1];
+    $(function () {
+       $('.show_text').text('"'+showVal+'"');
+    })
+</script>
+</body>
+<script>
+</script>
+</html>

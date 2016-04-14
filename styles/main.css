@@ -1,0 +1,480 @@
+/**********全局样式************/
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    text-align: center;
+}
+
+.clear {
+    clear: both;
+    zoom:1;
+}
+
+/*******头部*******/
+.header {
+    width: 100%;
+    height: 70px;
+    background: #5cb85c;
+}
+
+.header .nav_left {
+    width: 400px;
+    height: 70px;
+    float: left;
+    color: white;
+    cursor: pointer;
+    line-height: 70px;
+    text-indent: 210px;
+    background: #5cb85c url("../images/icon/Logo.png") no-repeat 180px 3px;
+}
+
+.header .text {
+    top: 20px;
+    float: left;
+    text-indent: 400px;
+    position: absolute;
+}
+
+.header .text .search {
+    text-align: left;
+    width: 280px;
+    height: 30px;
+    padding-left:  30px;
+    background: white url("../images/icon/Search.png") no-repeat 8px 7px;
+}
+
+.header .nav_right {
+    float: left;
+    margin-left: 500px;
+    /*position: absolute;*/
+}
+
+.header .nav_right li {
+    float: left;
+    width: 100px;
+    line-height: 70px;
+    text-align: center;
+    /*position: relative;*/
+}
+
+
+.header .nav_right li a {
+    color: white;
+    display: inline-block;
+    font-family: "微软雅黑";
+}
+
+.nav_right .down_menu {
+    display: none;
+    height: 50px;
+    width: 100%;
+    opacity: 0.8;
+    left: 0;
+    top: 70px;
+    z-index: 2;
+    position: absolute;
+    background-color: #5cb85c;
+}
+.nav_right li:hover a{
+    color: black;
+}
+.nav_right li:hover .down_menu{
+    display: block;
+}
+.nav_right .down_menu li{
+    /*width: 00px;*/
+    height: 50px;
+    margin: 0 20px;
+    line-height: 42px;
+}
+.nav_right .down_menu li:first-child{margin-left: 450px;}
+.nav_right .down_menu li a:hover{color: red;border-bottom: 3px solid white}
+.nav_right .down_menu li a{color: white;padding: 2px 2px;}
+
+/********banner开始**********/
+
+.banner .img{
+    width: 100%;
+    height: 466px;
+    position: absolute;
+}
+.banner .img_btn{
+    top: 470px;
+    width: 100%;
+    height: 24px;
+    /*z-index: 999;*/
+    position: absolute;
+}
+.banner .img_btn:hover{
+    cursor: pointer;
+}
+.banner ul{
+    width: 140px;
+    height: 20px;
+    margin: 2px auto;
+    /*opacity: 0.5;*/
+    border-radius: 15px;
+    background-color: silver;
+}
+.banner ul li{
+    float: left;
+    width: 20px;
+    height: 20px;
+    margin-left: 20px;
+    border-radius: 50px;
+    background-color: white;
+}
+.banner ul li:hover{
+    cursor: pointer;
+    background-color: red;
+}
+.banner .hover{
+    background-color: red;
+}
+/********左边导航栏开始**********/
+.nav {
+    top: 120px;
+    left: 0;
+    width: 222px;
+    display: none;
+    z-index: 999;
+    position: fixed;
+    _position:absolute;
+}
+
+.nav .df {
+    color: #fff;
+    width: 222px;
+    height: 50px;
+    text-align: left;
+    font-size: 18px;
+    line-height: 50px;
+    text-indent: 45px;
+    font-family: "微软雅黑";
+    background: silver url("../images/icon/nav_menu.png") no-repeat 15px 18px;
+}
+
+.nav ul li {
+    width: 222px;
+    height: 70px;
+    position: relative;
+    list-style-type: none;
+    background-color: deepskyblue;
+    border-bottom: 1px solid white;
+}
+
+.nav ul li h3 {
+    text-align: left;
+    height: 40px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: 100;
+    text-indent: 15px;
+    line-height: 40px;
+    font-family: "微软雅黑";
+    background: url("../images/icon/TriangleRight.png") no-repeat 200px 15px;
+}
+
+.nav ul li h3 a {
+    color: white;
+}
+
+.nav ul li p {
+    text-align: left;
+    font-size: 14px;
+    text-indent: 15px;
+    font-family: "微软雅黑";
+}
+
+.nav ul li p a {
+    margin-right: 10px;
+    color: antiquewhite;
+}
+
+.nav ul li a:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+.nav ul li:hover {
+    background-color: #aaaaaa
+}
+
+.nav ul li:hover h3 {
+    background: url("../images/icon/NavCircledRight.png") no-repeat 200px 15px;
+}
+
+.nav ul li .child_menu {
+    top: 0;
+    z-index: 2;
+    float: left;
+    left: 222px;
+    opacity: 0.8;
+    width: 400px;
+    height: 242px;
+    display: none;
+    background-color: white;
+    position: absolute;
+    border: 2px solid silver;
+}
+.nav ul li:hover .child_menu{
+    display: block;
+}
+
+.child_menu ul li {
+    width: 360px;
+    height: 80px;
+    margin: 0 auto;
+    position: relative;
+    background-color: white;
+    border-bottom: 1px solid silver;
+}
+
+.child_menu ul li:hover {
+    background-color: white;
+}
+
+.child_menu ul li p {
+    float: left;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 80px;
+    margin-right: 10px;
+    overflow: hidden;
+    font-family: "微软雅黑";
+}
+
+.child_menu ul li p a {
+    color: black;
+    font-weight: 100;
+}
+.child_menu ul li p a:hover{
+    color: orangered;
+}
+
+/*********App应用开始**********/
+.app{
+    width: 100%;
+    height: 528px;
+    top:460px;
+    position: relative;
+    background-color: gainsboro;
+}
+.app .app_main{
+    margin: 0 auto;
+    width: 970px;
+    height: 380px;
+}
+.app .app_p{
+    width: 100%;
+    margin-top:20px;
+    position: absolute;
+}
+.app .app_p p{
+    font-size: 28px;
+    color: saddlebrown;
+    font-family: "微软雅黑";
+}
+.app_main ul{
+    top:50px;
+    float: left;
+    margin: 88px 0 60px 18px;
+    width: 220px;
+    height: 380px;
+    background-color: white;
+}
+.app_main ul .app_li{
+    width: 100%;
+    height: 40px;
+    color: honeydew;
+    font-size: 16px;
+    font-family: "微软雅黑";
+    line-height: 40px;
+    background-color:#3276b1;
+}
+.app_main ul img{
+    margin: 20px 0;
+    height: 100px;
+    width: 100px;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+}
+.app_main ul img:hover {
+    height: 133px;
+    width: 130px;
+    cursor: pointer;
+    /*margin-left: 50px;*/
+}
+.app_li2 a{
+    color: red;
+}
+.app_li3{
+    text-align: left;
+    color: silver;
+    font-size: 16px;
+    padding: 0 20px;
+}
+
+/*********服务************/
+
+.our_s{
+    width: 100%;
+    height: 700px;
+    top: 528px;
+    position: relative;
+}
+.our_s .our_p{
+    width: 100%;
+    /*background-color: blue;*/
+}
+.our_s .our_p p{
+    color: saddlebrown;
+    font-size: 28px;
+    font-family: "微软雅黑";
+}
+.our_s .our_main{
+    margin: 68px auto 0 auto;
+    width: 970px;
+    height: 430px;
+}
+.our_main ul{
+    float: left;
+    width: 170px;
+    height: 430px;
+    margin-left: 19px;
+    overflow: hidden;
+}
+.our_main img{
+    padding: 10px 0;
+    -webkit-transition: all 0.5s ease-out;
+    -moz-transition: all 0.5s ease-out;
+    -o-transition: all 0.5s ease-out;
+}
+.our_main img:hover{
+    cursor: pointer;
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+}
+.our_main .our_li{
+    margin-bottom: 10px;
+    color: silver;
+    font-size: 20px;
+    font-family: "微软雅黑";
+}
+.our_main .our_li2{
+    font-size: 14px;
+    line-height: 25px;
+    text-align: left;
+    color: silver;
+    font-family: "微软雅黑";
+}
+.our_main .our_li3 a{
+    color: red;
+    font-size: 14px;
+    font-family: "微软雅黑";
+}
+.our_click{
+    width: 100%;
+    position:relative;
+}
+.our_click p{
+    margin: 0 auto;
+    width: 420px;
+    height: 80px;
+    font-size: 22px;
+    background-color: red;
+}
+.our_click p:hover{
+    cursor: pointer;
+    background-color: #3276b1;
+}
+.our_click p a{
+    text-align: center;
+    margin: 25px 0;
+    display: inline-block;
+    font-weight: bold;
+    color: white;
+}
+/**********footer底部*************/
+.footer_layout{
+    width: 100%;
+    top:578px;
+    position: relative;
+    background: gainsboro;
+}
+.f_main{
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+.f_main div{
+    color: #ababab;
+    /*height: 30px;*/
+}
+.f_main a{
+    color: #ababab;
+    margin: 0 5px;
+}
+/*************回到顶部********************/
+.back_top{
+    position: fixed;
+    _position:absolute;
+    display: none;
+    right: 80px;
+    bottom: 260px;
+    opacity: 0.4;
+}
+.back_top img:hover{
+    background: url("../images/icon/back_top1.png") no-repeat;
+}
+.back_top:hover{
+    cursor: pointer;
+    opacity: 1;
+}
+/*********透明遮罩***/
+.opacity_bg{
+    width:100%;
+    height:100%;
+    position:fixed;
+    top:0;
+    left:0;
+    background:#000;
+    opacity: 0.6;
+    margin:auto;
+    z-index:998;
+    display:none;
+}
+/********加载动画效果*********/
+.loader{
+    width: 200px;
+    height: 200px;
+    position: fixed;
+    left:400px;
+    top: 200px;
+    display: none;
+    z-index: 999;
+}
+
+/*********search.html**********/
+.error{
+    width: 300px;
+    height: 200px;
+    margin-top: 300px;
+    margin-left: 600px;
+}
+.error .error_text{
+    color: gainsboro;
+    font-family: "微软雅黑";
+}
+.error p{
+    margin: 10px auto;
+    font-size: 20px;
+    color: #5bc0de;
+}
+.error p a{
+    color: #5bc0de;
+    font-size: 20px;
+}
